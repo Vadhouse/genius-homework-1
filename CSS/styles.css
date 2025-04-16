@@ -1,0 +1,51 @@
+:root {
+  --color-brand-ligt: #2b7fff;
+  --color-brand-dark: #011c44;
+}
+
+/* Base */
+.button {
+  color: #ffffff;
+  background: var(--color-brand-ligt);
+  border: 2px solid var(--color-brand-ligt);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+/* Button */
+.button:focus {
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid var(--color-brand-ligt);
+}
+
+/* Link */
+.link {
+  color: var(--color-brand-dark);
+}
+
+.link:hover {
+  color: var(--color-brand-ligt);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand-ligt);
+}
+
+/* Main Light blue color */
+.section-title {
+  color: var(--color-brand-ligt);
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
+
+.section-gray .accent {
+  color: #4a4a4a;
+}
+
+.section-black .accent {
+  color: #000000;
+}
