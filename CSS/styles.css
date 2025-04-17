@@ -43,6 +43,7 @@
 :root {
   --color-brand-ligt: #2b7fff;
   --color-brand-dark: #011c44;
+  --color-brand-white: #ffffff;
 }
 
 /* Base */
@@ -51,6 +52,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  font-style: normal;
 }
 
 ul {
@@ -59,7 +61,7 @@ ul {
 
 /* Button */
 .button {
-  color: #ffffff;
+  color: var(--color-brand-white);
   background: var(--color-brand-ligt);
   border: 2px solid var(--color-brand-ligt);
   border-radius: 32px;
@@ -74,19 +76,21 @@ ul {
 }
 
 /* Link */
-.link {
+.header-link {
   color: var(--color-brand-dark);
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.16;
+  text-decoration: none;
 }
 
-.link:hover {
+.header-link:hover {
   color: var(--color-brand-ligt);
 }
 
 /* Section-title-hero */
 .section-title-hero {
   color: var(--color-brand-dark);
+  line-height: 1.16;
 }
 
 .hero-title {
@@ -100,13 +104,14 @@ ul {
 
 .section-gray {
   color: #4a4a4a;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /* About us-section */
 .section-title-about-us {
   color: var(--color-brand-ligt);
   font-family: 'Play';
-  font-style: normal;
   font-size: 64px;
   font-weight: 700px;
   line-height: 1.15;
@@ -119,6 +124,8 @@ ul {
 
 .section-title-about-us-beauty {
   color: var(--color-brand-dark);
+  font-size: 22px;
+  line-height: 1.7;
 }
 
 .section-title-about-us-beauty .bold {
@@ -133,7 +140,6 @@ ul {
 .section-title-why-we-are {
   color: var(--color-brand-ligt);
   font-family: 'Play';
-  font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
@@ -144,11 +150,15 @@ ul {
   color: var(--color-brand-dark);
 }
 
+.section-title-why-we-are-text {
+  color: #000000;
+  line-height: 1.3;
+}
+
 /* Our treatment-section */
 .section-title-our-treatment {
   color: var(--color-brand-ligt);
   font-family: 'Play';
-  font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
@@ -163,7 +173,6 @@ ul {
 .section-title-contacts {
   color: var(--color-brand-ligt);
   font-family: 'Play';
-  font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
@@ -172,4 +181,47 @@ ul {
 
 .section-title-contacts .accent {
   color: var(--color-brand-dark);
+}
+
+.section-title-contacts-title {
+  color: var(--color-brand-white);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.section-title-contacts-title .accent {
+  color: var(--color-brand-ligt);
+}
+
+/* Footer link */
+.footer-link {
+  color: var(--color-brand-white);
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+}
+
+.address-link {
+  color: var(--color-brand-white);
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-link-confi {
+  color: var(--color-brand-white);
+  font-size: 16px;
+  line-height: 1.8;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-copyright {
+  color: #747272;
+  font-size: 13px;
+  line-height: 1.15;
+  font-style: normal;
 }
