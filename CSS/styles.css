@@ -1,19 +1,73 @@
+/* play-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v47-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v47-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v47-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
   --color-brand-ligt: #2b7fff;
   --color-brand-dark: #011c44;
 }
 
 /* Base */
+body {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Button */
 .button {
   color: #ffffff;
   background: var(--color-brand-ligt);
   border: 2px solid var(--color-brand-ligt);
   border-radius: 32px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-/* Button */
-.button:focus {
+.button:hover {
   color: #000000;
   background-color: transparent;
   border: 2px solid var(--color-brand-ligt);
@@ -22,30 +76,100 @@
 /* Link */
 .link {
   color: var(--color-brand-dark);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .link:hover {
   color: var(--color-brand-ligt);
 }
 
-/* Hero section */
-.hero-title {
-  color: var(--color-brand-ligt);
-}
-
-/* Main Light blue color */
-.section-title {
-  color: var(--color-brand-ligt);
-}
-
-.section-title .accent {
+/* Section-title-hero */
+.section-title-hero {
   color: var(--color-brand-dark);
 }
 
-.section-gray .accent {
+.hero-title {
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  text-align: left;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.section-gray {
   color: #4a4a4a;
 }
 
-.section-black .accent {
-  color: #000000;
+/* About us-section */
+.section-title-about-us {
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 700px;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.section-title-about-us .accent {
+  color: var(--color-brand-dark);
+}
+
+.section-title-about-us-beauty {
+  color: var(--color-brand-dark);
+}
+
+.section-title-about-us-beauty .bold {
+  font-weight: bold;
+}
+
+.section-title-about-us-beauty .capitalize {
+  text-transform: capitalize;
+}
+
+/* Why we are-section */
+.section-title-why-we-are {
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-title-why-we-are .accent {
+  color: var(--color-brand-dark);
+}
+
+/* Our treatment-section */
+.section-title-our-treatment {
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-title-our-treatment .accent {
+  color: var(--color-brand-dark);
+}
+
+/* Contacts-section */
+.section-title-contacts {
+  color: var(--color-brand-ligt);
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-title-contacts .accent {
+  color: var(--color-brand-dark);
 }
