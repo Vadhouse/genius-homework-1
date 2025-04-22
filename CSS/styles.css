@@ -130,7 +130,7 @@ p {
 
 /* About us-section */
 .container {
-  width: 1240;
+  width: 1240px;
   margin: 0 auto;
 }
 
@@ -169,7 +169,7 @@ p {
 
 /* Why we are-section */
 .section-title-why-we-are {
-  margin-bottom: 130.5;
+  margin-bottom: 130.5px;
   color: var(--color-brand-ligt);
   font-family: 'Play';
   font-weight: 700;
