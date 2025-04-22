@@ -47,6 +47,10 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto';
   font-size: 18px;
@@ -57,6 +61,20 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.section {
+  padding: 96px 0;
 }
 
 /* Button */
@@ -94,6 +112,8 @@ ul {
 }
 
 .hero-title {
+  margin-bottom: 0;
+  padding: 154.86px 706px 274.14px 205px;
   color: var(--color-brand-ligt);
   font-family: 'Play';
   text-align: left;
@@ -109,7 +129,18 @@ ul {
 }
 
 /* About us-section */
+.container {
+  width: 1240;
+  margin: 0 auto;
+}
+
+.section-for-padding-ind {
+  padding-bottom: 176px;
+  padding-top: 131.14px;
+}
+
 .section-title-about-us {
+  margin-bottom: 40px;
   color: var(--color-brand-ligt);
   font-family: 'Play';
   font-size: 64px;
@@ -138,12 +169,12 @@ ul {
 
 /* Why we are-section */
 .section-title-why-we-are {
+  margin-bottom: 130.5;
   color: var(--color-brand-ligt);
   font-family: 'Play';
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
-  text-align: center;
 }
 
 .section-title-why-we-are .accent {
@@ -157,12 +188,12 @@ ul {
 
 /* Our treatment-section */
 .section-title-our-treatment {
+  margin-bottom: 48px;
   color: var(--color-brand-ligt);
   font-family: 'Play';
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
-  text-align: center;
 }
 
 .section-title-our-treatment .accent {
@@ -171,12 +202,12 @@ ul {
 
 /* Contacts-section */
 .section-title-contacts {
+  margin-bottom: 48px;
   color: var(--color-brand-ligt);
   font-family: 'Play';
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
-  text-align: center;
 }
 
 .section-title-contacts .accent {
@@ -188,7 +219,6 @@ ul {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.18;
-  text-align: center;
 }
 
 .section-title-contacts-title .accent {
