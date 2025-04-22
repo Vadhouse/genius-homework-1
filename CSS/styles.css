@@ -52,6 +52,7 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 400;
@@ -79,6 +80,7 @@ p {
 
 /* Button */
 .button {
+  padding: 16px 32px;
   color: var(--color-brand-white);
   background: var(--color-brand-ligt);
   border: 2px solid var(--color-brand-ligt);
@@ -130,7 +132,8 @@ p {
 
 /* About us-section */
 .container {
-  width: 1240px;
+  width: 100%;
+  max-width: 1288px;
   margin: 0 auto;
 }
 
