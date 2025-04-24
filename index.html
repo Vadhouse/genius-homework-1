@@ -10,47 +10,53 @@
     <header>
       <div class="container">
         <div class="header-container">
-          <nav>
+          <nav class="header-nav">
             <a href="/">
               <img src="./Images/logo.svg" alt="Логотип зона краси" />
             </a>
-            <ul>
+            <ul class="header-menu">
               <li><a class="header-link" href="#about-us-section">Про нас</a></li>
               <li><a class="header-link" href="#why-we-are-section">Чому ми</a></li>
               <li><a class="header-link" href="#our-treatment-section">Наші процедури</a></li>
               <li><a class="header-link" href="#contacts-section">Контакти</a></li>
             </ul>
-            <div class="social">
-              <a href="/" class="social-item"><img src="./Images/phone.svg" alt="Логотип трубка" /></a>
-              <a href="/" class="social-item"><img src="./Images/facebook.svg" alt="Логотип фейсбук" /></a>
-              <a href="/" class="social-item"><img src="./Images/instagram.svg" alt="Логотип інстаграм" /></a>
-            </div>
           </nav>
+          <div class="social-header">
+            <a href="/" class="social-item"><img src="./Images/phone.svg" alt="Логотип трубка" /></a>
+            <a href="/" class="social-item"><img src="./Images/facebook.svg" alt="Логотип фейсбук" /></a>
+            <a href="/" class="social-item"><img src="./Images/instagram.svg" alt="Логотип інстаграм" /></a>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <p class="section-title-hero">Косметологічна клініка</p>
-          <h1 class="hero-title" lang="en">Beauty Zone</h1>
-          <button class="button" type="submit">Замовити дзвінок</button>
-          <p class="section-gray">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+          <div class="hero-container">
+            <p class="section-title-hero">Косметологічна клініка</p>
+            <h1 class="hero-title" lang="en">Beauty Zone</h1>
+            <button class="button" type="submit">Замовити дзвінок</button>
+            <p class="section-gray">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+          </div>
         </div>
       </section>
       <section class="section-for-padding-ind" id="about-us-section">
         <div class="container">
-          <h2 class="section-title-about-us" lang="en"><span class="accent">Перевтілюйтесь в</span> Beauty Zone!</h2>
-          <p class="section-title-about-us-beauty">
-            Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла
-          </p>
-          <p class="section-title-about-us-beauty" lang="en">
-            B <span class="capitalize"><span class="bold">beauty zone</span></span> ми гарантуємо найвищі стандарти якості та
-            приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. З
-            нами краса назавжди!
-          </p>
-          <img src="./Images/face before.jpg" alt="Обличчя жінки до лікування" />
-          <img src="./Images/face after.jpg" alt="Обличчя жінки після лікування" />
+          <div class="about-us-container">
+            <div class="about-us-divide">
+              <h2 class="section-title-about-us" lang="en"><span class="accent">Перевтілюйтесь в</span> Beauty Zone!</h2>
+              <p class="section-title-about-us-beauty">
+                Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла
+              </p>
+              <p class="section-title-about-us-beauty" lang="en">
+                B <span class="capitalize"><span class="bold">beauty zone</span></span> ми гарантуємо найвищі стандарти якості
+                та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. З нами краса назавжди!
+              </p>
+            </div>
+            <img src="./Images/face before.jpg" alt="Обличчя жінки до лікування" />
+            <img src="./Images/face after.jpg" alt="Обличчя жінки після лікування" />
+          </div>
         </div>
       </section>
       <section class="section" id="why-we-are-section">
@@ -84,20 +90,23 @@
       <section class="section" id="our-treatment-section">
         <div class="container">
           <h2 class="section-title-our-treatment"><span class="accent">Наші</span> процедури</h2>
-          <ul>
+          <ul class="treatment-list">
             <li>
-              <article>
+              <article class="treatment-pict">
                 <img src="./Images/treatment cream.jpg" alt="Обличчя жінки намащене кремом" />
+                <p class="right-treatment">Маски для обличчя</p>
               </article>
             </li>
             <li>
-              <article>
+              <article class="treatment-pict">
                 <img src="./Images/treatment injection.jpg" alt="Обличчя жінки інєкція" />
+                <p class="right-treatment">Ін'єкції для обличчя</p>
               </article>
             </li>
             <li>
-              <article>
+              <article class="treatment-pict">
                 <img src="./Images/treatment caress.jpg" alt="Обличчя жінки лопатка" />
+                <p class="right-treatment">Очищення обличчя</p>
               </article>
             </li>
           </ul>
